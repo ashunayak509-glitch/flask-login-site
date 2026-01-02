@@ -1,0 +1,162 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    color: #333;
+}
+
+/* ===== Headers ===== */
+h1, h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px #555;
+}
+
+/* ===== Login Page ===== */
+.login-container {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    max-width: 400px;
+    margin: 80px auto;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #ff4081;
+    box-shadow: 0 0 8px rgba(255,64,129,0.5);
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    background: #ff4081;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background: #e73370;
+    transform: scale(1.05);
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* ===== Fade-in Animation ===== */
+@keyframes fadeIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* ===== Home Page ===== */
+.logout-btn {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.logout-btn a {
+    padding: 8px 12px;
+    background: #ff4081;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-btn a:hover {
+    background: #e73370;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.video-box:hover {
+    transform: scale(1.05);
+}
+
+.video-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    margin-top: 10px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #4a148c;
+    margin-bottom: 5px;
+}
+
+.channel {
+    font-size: 0.9em;
+    color: #ff4081;
+    margin-bottom: 8px;
+}
+
+a.watch-btn {
+    text-decoration: none;
+    color: #fff;
+    background: #2196f3;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+a.watch-btn:hover {
+    background: #f50057;
+}
