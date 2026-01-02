@@ -34,9 +34,9 @@ def home():
     ]
 
     for video in youtube_videos:
-        video_id = video["link"].split("v=")[-1]
+        video_id = video["link"].split("v=")[-1].split("&")[0]
         video["thumbnail"] = f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg"
-        video["embed"] = f"https://www.youtube.com/embed/{video_id}"  # <-- add embed URL
+        video["embed"] = f"https://www.youtube.com/embed/{video_id}"
 
     return render_template("home.html", channel=channel_name, videos=youtube_videos)
 
